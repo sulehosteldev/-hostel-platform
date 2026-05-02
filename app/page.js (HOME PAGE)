@@ -1,0 +1,49 @@
+import Navbar from "@/components/Navbar"
+
+import Hero from "@/components/Hero"
+
+import HostelCard from "@/components/HostelCard"
+
+import { hostels } from "@/lib/data"
+
+export default function Home() {
+
+  return (
+
+    <div>
+
+      <Navbar />
+
+      <Hero />
+
+      <h2 style={{ textAlign: "center" }}>
+
+        Featured Hostels
+
+      </h2>
+
+      <div style={{
+
+        display: "grid",
+
+        gridTemplateColumns: "repeat(3, 1fr)",
+
+        gap: "20px",
+
+        padding: "20px"
+
+      }}>
+
+        {hostels.map(h => (
+
+          <HostelCard key={h.id} hostel={h} />
+
+        ))}
+
+      </div>
+
+    </div>
+
+  )
+
+}
