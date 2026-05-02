@@ -1,0 +1,49 @@
+hostel-platform/
+
+│
+
+├── app/
+
+│   ├── layout.js
+
+│   ├── page.js
+
+│   ├── hostels/
+
+│   │   ├── page.js
+
+│   │   ├── [id]/
+
+│   │   │   ├── page.js
+
+│
+
+├── components/
+
+│   ├── Navbar.js
+
+│   ├── Hero.js
+
+│   ├── HostelCard.js
+
+│
+
+├── lib/
+
+│   ├── data.js
+
+│
+
+├── public/
+
+│
+
+├── styles/
+
+│   ├── globals.css
+
+│
+
+├── package.json
+
+└── tailwind.config.js
